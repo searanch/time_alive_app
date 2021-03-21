@@ -1,4 +1,5 @@
-from flask import Flask, render_template
+#from flask import Flask, render_template
+from flask import Flask, render_template, redirect, url_for
 import datetime
 from datetime import date
 from datetime import datetime
@@ -9,9 +10,13 @@ import function
 app = Flask(__name__)
 
 @app.route('/')
-def days_alive():
+def home():
 #     '''function to find out how many days I have been alive'''
+    #return function.time_alive()
+    #templeteData = render_template('index.html')
+    #return render_template('index.html')
     return function.time_alive()
+
 
 
     

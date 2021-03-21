@@ -14,7 +14,6 @@ def time_alive():
     
     # ninty = 32850
     # days_till_90 = ninty - delta
-    print(f"Congratulations, Liz! You have been alive for {delta.days} days!")
+    #return delta.days
+    return f"<html><body><h1>Congratulations, Liz! You have been alive for {delta.days} days!</h1></body></html>"
     #print(f"If you live until 90, you have {days_till_90.days} days to live.")
-
-time_alive()
